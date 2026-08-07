@@ -410,8 +410,8 @@ function renderGlobe() {
 
   // isotipo Innova Hub al centro
   const img = document.createElementNS(NS, "image");
-  img.setAttributeNS("http://www.w3.org/1999/xlink", "href", "assets/Innova_Hub_isotipo.png");
-  img.setAttribute("href", "assets/Innova_Hub_isotipo.png");
+  img.setAttributeNS("http://www.w3.org/1999/xlink", "href", "../imagenes/Innova_Hub_isotipo.png");
+  img.setAttribute("href", "../imagenes/Innova_Hub_isotipo.png");
   const logoSize = r * 0.62;
   img.setAttribute("x", cx - logoSize / 2);
   img.setAttribute("y", cy - logoSize / 2);
