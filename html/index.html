@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Materiales del curso · Seguridad en la Nube AWS · Innova Hub</title>
+<meta name="description" content="Portal de materiales para alumnos del curso Seguridad en la Nube AWS: temario, presentaciones, guías de laboratorio y recursos por unidad." />
+<link rel="icon" type="image/png" href="imagenes/Innova_Hub_isotipo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <img src="imagenes/Innova_Hub_isotipo.png" alt="" class="brand-mark" />
+      <span class="brand-word">Innova<em>Hub</em></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#curso">El curso</a>
+      <a href="#ruta">Unidades</a>
+      <a href="#materiales">Materiales</a>
+      <a href="#metodologia">Metodología</a>
+      <a href="#cumplimiento">Cumplimiento</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <a href="#materiales" class="btn btn-primary nav-cta">Ir a materiales</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Portal de materiales · Alumnos</p>
+      <h1>Seguridad en la Nube <span class="accent">AWS</span></h1>
+      <p class="hero-sub" id="heroSubtitle">Cargando…</p>
+      <div class="hero-badges" id="heroBadges"></div>
+      <div class="hero-actions">
+        <a href="#materiales" class="btn btn-primary">Ver materiales de apoyo</a>
+        <a href="#ruta" class="btn btn-ghost">Ir al temario por unidad</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg id="globeSVG" viewBox="0 0 480 480" class="globe-svg"></svg>
+    </div>
+  </div>
+  <div class="stat-strip" id="statStrip"></div>
+</section>
+
+<!-- ============================== SOBRE EL CURSO ============================== -->
+<section class="section" id="curso">
+  <div class="wrap">
+    <p class="section-eyebrow">01 — El curso</p>
+    <h2 class="section-title">Un programa técnico-práctico, con aplicación inmediata</h2>
+    <div class="about-grid">
+      <div class="about-card about-card--main">
+        <h3>Objetivo general</h3>
+        <p id="generalObjective">Cargando…</p>
+      </div>
+      <div class="about-card">
+        <h3>A quién está dirigido</h3>
+        <p id="audience">Cargando…</p>
+      </div>
+      <div class="about-card about-card--list">
+        <h3>Al finalizar, el participante podrá</h3>
+        <ul id="specificObjectives"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== RUTA DE APRENDIZAJE ============================== -->
+<section class="section section--muted" id="ruta">
+  <div class="wrap">
+    <p class="section-eyebrow">02 — Ruta de aprendizaje</p>
+    <h2 class="section-title">Cinco unidades, veinte horas, un mismo hilo conductor</h2>
+    <p class="section-lead">
+      De los fundamentos del modelo de responsabilidad compartida hasta un plan de
+      auditoría propio. Cada unidad abre con teoría concisa y cierra con laboratorio guiado.
+    </p>
+
+    <div class="timeline" id="timeline"></div>
+    <div class="units" id="unitsList"></div>
+  </div>
+</section>
+
+<!-- ============================== MATERIALES GENERALES ============================== -->
+<section class="section" id="materiales">
+  <div class="wrap">
+    <p class="section-eyebrow">03 — Materiales</p>
+    <h2 class="section-title">Materiales de apoyo</h2>
+    <p class="section-lead">
+      Acá se suben los archivos que sirven para todo el curso. Los materiales
+      específicos de cada unidad (presentación de esa unidad, guías de
+      laboratorio, plantillas) están dentro de cada unidad, en la sección
+      “Unidades” de más arriba.
+    </p>
+    <div class="materials-grid" id="generalMaterials"></div>
+  </div>
+</section>
+
+<!-- ============================== METODOLOGÍA ============================== -->
+<section class="section section--muted" id="metodologia">
+  <div class="wrap">
+    <p class="section-eyebrow">04 — Metodología</p>
+    <h2 class="section-title">Teoría breve, laboratorio siempre</h2>
+    <div class="method-grid">
+      <div class="method-card">
+        <span class="method-icon" data-icon="book"></span>
+        <h3>Contenido teórico</h3>
+        <p>Viñetas concisas y diagramas de arquitectura — nunca párrafos largos. Cada unidad resalta cifras y conceptos clave en recuadros de referencia rápida.</p>
+      </div>
+      <div class="method-card">
+        <span class="method-icon" data-icon="flask"></span>
+        <h3>Laboratorio guiado</h3>
+        <p>Cada tema cierra con un laboratorio de 20 a 90 minutos: objetivo claro, pasos de alto nivel, herramientas de AWS y tiempo estimado.</p>
+      </div>
+      <div class="method-card">
+        <span class="method-icon" data-icon="check"></span>
+        <h3>Evidencia y cumplimiento</h3>
+        <p>Lo construido en cada laboratorio se reutiliza como evidencia auditable en las unidades siguientes, hasta llegar al plan de auditoría final.</p>
+      </div>
+    </div>
+
+    <h3 class="tools-heading">Stack del curso</h3>
+    <div class="tools-grid" id="toolsGrid"></div>
+  </div>
+</section>
+
+<!-- ============================== CUMPLIMIENTO ============================== -->
+<section class="section section--muted" id="cumplimiento">
+  <div class="wrap">
+    <p class="section-eyebrow">05 — Marco normativo</p>
+    <h2 class="section-title">GDPR e ISO 27017, mapeados a servicios reales</h2>
+    <p class="section-lead">
+      Ambos marcos exigen cifrado, control de acceso y trazabilidad — lo que permite
+      reutilizar una misma configuración de AWS Config y CloudTrail como evidencia
+      compartida para ambas auditorías.
+    </p>
+    <div class="tables-grid">
+      <div class="compare-table" id="frameworksTable"></div>
+      <div class="compare-table" id="networkTable"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== RECURSOS ============================== -->
+<section class="section" id="recursos">
+  <div class="wrap">
+    <p class="section-eyebrow">06 — Recursos</p>
+    <h2 class="section-title">Para seguir profundizando</h2>
+    <div class="resources-grid" id="resourcesGrid"></div>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section class="section section--muted" id="faq">
+  <div class="wrap wrap--narrow">
+    <p class="section-eyebrow">07 — Preguntas frecuentes</p>
+    <h2 class="section-title">Dudas frecuentes sobre el portal</h2>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============================== SOPORTE ============================== -->
+<section class="support-band" id="soporte">
+  <div class="wrap support-inner">
+    <div>
+      <h2>¿Algo no aparece o no carga?</h2>
+      <p id="supportNote">Cargando…</p>
+    </div>
+    <a href="#" class="btn btn-primary" id="supportEmailBtn">Escribir a soporte</a>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="assets/Innova_Hub_isotipo.png" alt="" class="brand-mark" />
+      <span class="brand-word">Innova<em>Hub</em></span>
+      <p>Portal de materiales para alumnos.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Curso</h4>
+        <a href="#curso">El curso</a>
+        <a href="#ruta">Unidades</a>
+        <a href="#metodologia">Metodología</a>
+      </div>
+      <div>
+        <h4>Referencia</h4>
+        <a href="#materiales">Materiales</a>
+        <a href="#cumplimiento">Cumplimiento</a>
+        <a href="#recursos">Recursos</a>
+      </div>
+      <div>
+        <h4>Ayuda</h4>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="#soporte">Contactar a soporte</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> Innova Hub. Portal interno de materiales — el contenido se actualiza a medida que avanza el curso.</p>
+  </div>
+</footer>
+
+<script src="data/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
