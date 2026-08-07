@@ -29,6 +29,12 @@ const ICON_PATHS = {
     '<path d="M12 4v11m0 0 4-4m-4 4-4-4"/><path d="M5 19.5h14"/>',
   clock:
     '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/>',
+  mail:
+    '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/>',
+  phone:
+    '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/>',
+  linkedin:
+    '<path d="M7 17 17 7"/><path d="M9 7h8v8"/>',
 };
 
 function icon(name, cls) {
@@ -85,6 +91,41 @@ function renderSupport() {
   const btn = $("#supportEmailBtn");
   btn.href = `mailto:${SUPPORT.email}`;
   btn.textContent = SUPPORT.email;
+
+  const telHref = "tel:" + INSTRUCTOR.phone.replace(/[^\d+]/g, "");
+  $("#supportInstructor").innerHTML = `
+    <span class="support-instructor-label">Docente: ${INSTRUCTOR.name}</span>
+    <a href="mailto:${INSTRUCTOR.email}">${icon("mail")}<span>${INSTRUCTOR.email}</span></a>
+    <a href="${telHref}">${icon("phone")}<span>${INSTRUCTOR.phone}</span></a>
+    <a href="${INSTRUCTOR.linkedin}" target="_blank" rel="noopener">${icon("linkedin")}<span>LinkedIn</span></a>
+  `;
+}
+
+/* ==========================================================================
+   DOCENTE
+   ========================================================================== */
+function renderInstructor() {
+  const mount = $("#instructorCard");
+  const initials = INSTRUCTOR.name
+    .split(" ")
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join("")
+    .toUpperCase();
+  const telHref = "tel:" + INSTRUCTOR.phone.replace(/[^\d+]/g, "");
+  mount.innerHTML = `
+    <div class="instructor-avatar">${initials}</div>
+    <div class="instructor-info">
+      <h3>${INSTRUCTOR.name}</h3>
+      <span class="instructor-role">${INSTRUCTOR.role}</span>
+      <p class="instructor-bio">${INSTRUCTOR.bio}</p>
+      <div class="instructor-contact">
+        <a href="mailto:${INSTRUCTOR.email}">${icon("mail")}<span>${INSTRUCTOR.email}</span></a>
+        <a href="${telHref}">${icon("phone")}<span>${INSTRUCTOR.phone}</span></a>
+        <a href="${INSTRUCTOR.linkedin}" target="_blank" rel="noopener">${icon("linkedin")}<span>LinkedIn</span></a>
+      </div>
+    </div>
+  `;
 }
 
 /* ==========================================================================
@@ -444,6 +485,7 @@ function bindMisc() {
 document.addEventListener("DOMContentLoaded", () => {
   renderHero();
   renderAbout();
+  renderInstructor();
   renderTimeline();
   renderUnits();
   renderGeneralMaterials();

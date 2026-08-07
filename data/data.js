@@ -40,6 +40,17 @@ const SUPPORT = {
   note: "¿Dudas sobre el contenido, un laboratorio que no te carga o un material que falta? Escribinos y te respondemos por acá.",
 };
 
+/* Datos de contacto de la docente a cargo del curso — se muestran en la
+   sección "Docente" y como vía directa dentro de la sección de soporte. */
+const INSTRUCTOR = {
+  name: "Sabina Romero",
+  role: "Docente del curso",
+  bio: "A cargo del dictado y la tutoría del curso Seguridad en la Nube AWS.",
+  email: "sabina.romero@gmail.com",
+  phone: "+56 9 6672 349",
+  linkedin: "https://www.linkedin.com/in/sabina-romeror/",
+};
+
 /* ==========================================================================
    MATERIALES
    --------------------------------------------------------------------------

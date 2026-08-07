@@ -331,6 +331,67 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 /* ==========================================================================
+   Docente
+   ========================================================================== */
+.instructor-card {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  padding: 32px;
+}
+.instructor-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--teal-900);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.instructor-info h3 { font-size: 1.25rem; margin-bottom: 4px; }
+.instructor-role {
+  font-family: var(--font-mono);
+  font-size: .74rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--teal-700);
+}
+.instructor-bio {
+  color: var(--muted);
+  font-size: .98rem;
+  margin: 12px 0 18px;
+  max-width: 60ch;
+}
+.instructor-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.instructor-contact a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  padding: .6em 1em;
+  border-radius: 999px;
+  transition: border-color .15s ease, background .15s ease;
+}
+.instructor-contact a svg { width: 15px; height: 15px; }
+.instructor-contact a:hover { border-color: var(--teal-600); background: var(--teal-50); }
+
+/* ==========================================================================
    Timeline (unit overview strip)
    ========================================================================== */
 .timeline {
@@ -818,6 +879,34 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .support-inner .btn-primary:hover { background: var(--teal-100); }
 
+.support-instructor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+.support-instructor-label {
+  font-family: var(--font-mono);
+  font-size: .74rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+}
+.support-instructor a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: .85rem;
+  color: rgba(255,255,255,.85);
+  border: 1.5px solid rgba(255,255,255,.25);
+  padding: .5em .9em;
+  border-radius: 999px;
+  transition: border-color .15s ease, background .15s ease;
+}
+.support-instructor a svg { width: 14px; height: 14px; }
+.support-instructor a:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -899,6 +988,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 980px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-visual { order: -1; max-width: 280px; margin: 0 auto; }
+  .instructor-card { flex-direction: column; }
   .about-grid { grid-template-columns: 1fr; }
   .about-card--list { grid-column: span 1; }
   .about-card--list ul { grid-template-columns: 1fr; }
