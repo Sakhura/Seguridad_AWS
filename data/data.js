@@ -36,7 +36,7 @@ const COURSE = {
 /* Contacto de soporte del curso — se muestra al pie, sin formulario de
    captación de datos, solo la vía directa para escribirle al equipo. */
 const SUPPORT = {
-  email: "soporte@innovahub.example",
+  email: "sabina.romero@gmail.com",
   note: "¿Dudas sobre el contenido, un laboratorio que no te carga o un material que falta? Escribinos y te respondemos por acá.",
 };
 
@@ -67,8 +67,7 @@ const GENERAL_MATERIALS = [
     title: "Presentación completa del curso",
     type: "Presentación",
     description: "Las 33 diapositivas del curso: las 5 unidades, laboratorios, tablas comparativas y diagramas.",
-    status: "disponible",
-    url: "materiales/Curso_Seguridad_Nube_AWS.pptx",
+    status: "proximamente",
   },
   {
     title: "Plantilla de plan de auditoría",
@@ -152,7 +151,7 @@ const UNITS = [
       },
     ],
     materials: [
-      { title: "Diapositivas 5–9 (Unidad 1)", type: "Presentación", status: "disponible", url: "materiales/Curso_Seguridad_Nube_AWS.pptx" },
+      { title: "Diapositivas 5–9 (Unidad 1)", type: "Presentación", status: "proximamente" },
       { title: "Guía de laboratorio — VPC e IAM", type: "Guía", status: "proximamente" },
       { title: "Grabación de la clase virtual", type: "Video", status: "proximamente" },
     ],
@@ -203,7 +202,7 @@ const UNITS = [
       },
     ],
     materials: [
-      { title: "Diapositivas 10–14 (Unidad 2)", type: "Presentación", status: "disponible", url: "materiales/Curso_Seguridad_Nube_AWS.pptx" },
+      { title: "Diapositivas 10–14 (Unidad 2)", type: "Presentación", status: "proximamente" },
       { title: "Guía de laboratorio — Cifrado y VPC", type: "Guía", status: "proximamente" },
       { title: "Grabación de la clase virtual", type: "Video", status: "proximamente" },
     ],
@@ -263,7 +262,7 @@ const UNITS = [
       },
     ],
     materials: [
-      { title: "Diapositivas 15–19 (Unidad 3)", type: "Presentación", status: "disponible", url: "materiales/Curso_Seguridad_Nube_AWS.pptx" },
+      { title: "Diapositivas 15–19 (Unidad 3)", type: "Presentación", status: "proximamente" },
       { title: "Plantilla de mapeo GDPR/ISO 27017", type: "Plantilla", status: "proximamente" },
       { title: "Material de la clase presencial", type: "Otro", status: "proximamente" },
     ],
@@ -313,7 +312,7 @@ const UNITS = [
       },
     ],
     materials: [
-      { title: "Diapositivas 20–24 (Unidad 4)", type: "Presentación", status: "disponible", url: "materiales/Curso_Seguridad_Nube_AWS.pptx" },
+      { title: "Diapositivas 20–24 (Unidad 4)", type: "Presentación", status: "proximamente" },
       { title: "Plantilla del playbook de respuesta", type: "Plantilla", status: "proximamente" },
       { title: "Material de la clase presencial", type: "Otro", status: "proximamente" },
     ],
@@ -367,7 +366,7 @@ const UNITS = [
       },
     ],
     materials: [
-      { title: "Diapositivas 25–30 (Unidad 5)", type: "Presentación", status: "disponible", url: "materiales/Curso_Seguridad_Nube_AWS.pptx" },
+      { title: "Diapositivas 25–30 (Unidad 5)", type: "Presentación", status: "proximamente" },
       { title: "Plantilla de plan de auditoría", type: "Plantilla", status: "proximamente" },
       { title: "Material de la clase presencial", type: "Otro", status: "proximamente" },
     ],
