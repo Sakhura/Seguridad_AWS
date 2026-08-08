@@ -114,6 +114,22 @@ const UNITS = [
         title: "Beneficios de la nube y su impacto en seguridad",
         body: "Elasticidad, agilidad y pago por uso no son solo ventajas operativas: cada una exige un tipo distinto de control de seguridad que escale con ella.",
       },
+      {
+        title: "Modelo de precios de AWS: de CapEx a OpEx",
+        body: "AWS cambia la inversión fija en hardware (CapEx) por gasto operativo variable (OpEx): se paga solo por lo que se consume. Economías de escala, elasticidad y opciones de compra (Savings Plans y Reservadas hasta 72% de descuento, Spot hasta 90%) permiten reducir el costo total de propiedad sin sacrificar capacidad.",
+      },
+      {
+        title: "Ajuste de tamaño (rightsizing)",
+        body: "Hacer coincidir el tipo y tamaño de cada recurso (EC2, EKS, Fargate, Lambda, RDS) con su carga real evita pagar por capacidad ociosa — instancias que suelen operar entre 10% y 40% de uso. AWS Compute Optimizer analiza el historial con aprendizaje automático y puede generar hasta 36% de ahorro.",
+      },
+      {
+        title: "Regiones y Zonas de Disponibilidad",
+        body: "Una Región agrupa varias Zonas de Disponibilidad (AZ): centros de datos físicamente separados pero interconectados por fibra de baja latencia, aislados entre sí por diseño. La región se elige por latencia, soberanía de datos, disponibilidad de servicios y costo; se despliega en 2–3 AZ para lograr alta disponibilidad.",
+      },
+      {
+        title: "Pilar de Optimización de Costos (Well-Architected)",
+        body: "Uno de los seis pilares del Well-Architected Framework: gestionar el gasto en la nube (CFM), adoptar un modelo de consumo, medir la eficiencia y evitar el “trabajo pesado indiferenciado” con servicios gestionados. Se apoya en AWS Cost Explorer, Budgets y Trusted Advisor para monitorear y optimizar de forma continua.",
+      },
     ],
     labs: [
       {
