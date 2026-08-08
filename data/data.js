@@ -130,6 +130,10 @@ const UNITS = [
         title: "Pilar de Optimización de Costos (Well-Architected)",
         body: "Uno de los seis pilares del Well-Architected Framework: gestionar el gasto en la nube (CFM), adoptar un modelo de consumo, medir la eficiencia y evitar el “trabajo pesado indiferenciado” con servicios gestionados. Se apoya en AWS Cost Explorer, Budgets y Trusted Advisor para monitorear y optimizar de forma continua.",
       },
+      {
+        title: "Capa Gratuita de AWS (Free Tier)",
+        body: "Durante los primeros 12 meses, AWS Free Tier da acceso sin costo a S3 (5 GB, 2.000 solicitudes PUT y 20.000 GET/mes) y EBS (30 GB + 1 GB de snapshots), ideal para prototipar. Además hay herramientas siempre gratuitas — AWS Artifact (informes de cumplimiento SOC/ISO), AWS Well-Architected Tool y Amazon CodeWhisperer para uso individual. Lo que excede esos límites se factura al modelo estándar, por eso conviene vigilar el consumo con AWS Budgets o Cost Explorer.",
+      },
     ],
     labs: [
       {
