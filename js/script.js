@@ -78,6 +78,29 @@ function materialItemHTML(m) {
   `;
 }
 
+/* ==========================================================================
+   RECURSOS MULTIMEDIA (audio, video, infografías por unidad)
+   ========================================================================== */
+function mediaItemHTML(m) {
+  let player = "";
+  if (m.type === "video") {
+    player = `<video controls preload="metadata" src="${m.url}"></video>`;
+  } else if (m.type === "audio") {
+    player = `<audio controls preload="metadata" src="${m.url}"></audio>`;
+  } else if (m.type === "image") {
+    player = `<a href="${m.url}" target="_blank" rel="noopener"><img class="media-thumb" src="${m.url}" alt="${m.title}" /></a>`;
+  }
+  return `
+    <div class="media-item">
+      <div class="media-info">
+        <b>${m.title}</b>
+        <span>${m.description}</span>
+      </div>
+      ${player}
+    </div>
+  `;
+}
+
 function renderGeneralMaterials() {
   const grid = $("#generalMaterials");
   grid.innerHTML = "";
@@ -268,6 +291,15 @@ function renderUnits() {
       u.materials.forEach((m) => list.insertAdjacentHTML("beforeend", materialItemHTML(m)));
       materialsBlock.appendChild(list);
       bodyInner.appendChild(materialsBlock);
+    }
+
+    if (u.media && u.media.length) {
+      const mediaBlock = el("div", "unit-media");
+      mediaBlock.appendChild(el("h4", "", "Recursos multimedia"));
+      const list = el("div", "unit-media-list");
+      u.media.forEach((m) => list.insertAdjacentHTML("beforeend", mediaItemHTML(m)));
+      mediaBlock.appendChild(list);
+      bodyInner.appendChild(mediaBlock);
     }
 
     body.appendChild(bodyInner);

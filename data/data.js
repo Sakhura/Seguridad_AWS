@@ -155,6 +155,26 @@ const UNITS = [
       { title: "Guía de laboratorio — VPC e IAM", type: "Guía", status: "proximamente" },
       { title: "Grabación de la clase virtual", type: "Video", status: "proximamente" },
     ],
+    media: [
+      {
+        title: "Video resumen: Análisis de la Nube y AWS",
+        type: "video",
+        description: "Repaso audiovisual de los conceptos clave de la unidad — material de apoyo complementario.",
+        url: "recursos/modulo-1/Analisis_de_la_Nube_y_AWS.mp4",
+      },
+      {
+        title: "Audio resumen: Cómo AWS revolucionó el software moderno",
+        type: "audio",
+        description: "Formato podcast para repasar la unidad en cualquier momento.",
+        url: "recursos/modulo-1/Como_AWS_revoluciono_el_software_moderno.m4a",
+      },
+      {
+        title: "Infografía: Evolución de la Nube — Historia e impacto de AWS",
+        type: "image",
+        description: "Línea de tiempo 2006–2026, ventajas frente a la infraestructura tradicional, componentes de la infraestructura global y ECS vs. EKS.",
+        url: "recursos/modulo-1/Evolucion_de_infraestructura_en_nube.png",
+      },
+    ],
   },
   {
     n: 2,
