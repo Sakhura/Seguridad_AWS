@@ -151,8 +151,8 @@ const UNITS = [
       },
     ],
     materials: [
-      { title: "Diapositivas 5–9 (Unidad 1)", type: "Presentación", status: "proximamente" },
-      { title: "Guía de laboratorio — VPC e IAM", type: "Guía", status: "proximamente" },
+      { title: "Diapositivas 5–9 (Unidad 1)", type: "Presentación", status: "disponible", url: "materiales/Diapositivas_5-9_Unidad1.pptx" },
+      { title: "Guía de laboratorio — VPC e IAM", type: "Guía", status: "disponible", url: "materiales/Guia_Laboratorio_VPC_IAM.docx" },
       { title: "Grabación de la clase virtual", type: "Video", status: "proximamente" },
     ],
     media: [
